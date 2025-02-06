@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alpaca menu</title>
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/scss/style.scss">
+  </head>
+  <body>
+  <div class="page">
+    <header class="site-header">
+      <div class="site-header__wrapper">
+        <a href="/" class="site-header__logo-link" aria-label="Перейти на главную страницу">
+          <img src="public/logo.svg" alt="логотип" class="site-header__logo">
+        </a>
+        <nav class="site-header__nav" aria-label="Основное меню">
+          <ul class="site-header__nav-list">
+            <li class="site-header__nav-item">
+              <a href="javascript:void(0)" class="site-header__nav-link" aria-current="page">
+                <span>Главная</span>
+              </a>
+            </li>
+            <li class="site-header__nav-item site-header__nav-item--has-children">
+              <a href="javascript:void(0)" class="site-header__nav-link">
+                <span>Основное меню</span>
+              </a>
+              <ul class="site-header__nav-sublist">
+                <li class="site-header__nav-item">
+                  <a href="javascript:void(0)" class="site-header__nav-link">
+                    <span>Заказать вёрстку</span>
+                  </a>
+                </li>
+                <li class="site-header__nav-item">
+                  <a href="javascript:void(0)" class="site-header__nav-link">
+                    <span>Отправить макет на проверку</span>
+                  </a>
+                </li>
+                <li class="site-header__nav-item">
+                  <a href="javascript:void(0)" class="site-header__nav-link">
+                    <span>Хочу работать у вас</span>
+                  </a>
+                </li>
+                <li class="site-header__nav-item site-header__nav-item--has-children">
+                  <a href="javascript:void(0)" class="site-header__nav-link">
+                    <span>Есть предложение по работе с клиентами</span>
+                  </a>
+                  <ul class="site-header__nav-sublist">
+                    <li class="site-header__nav-item">
+                      <a href="javascript:void(0)" class="site-header__nav-link">
+                        <span>У меня есть оффер</span>
+                      </a>
+                    </li>
+                    <li class="site-header__nav-item">
+                      <a href="javascript:void(0)" class="site-header__nav-link">
+                        <span>Сделать партнёром</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="site-header__nav-item">
+              <a href="javascript:void(0)" class="site-header__nav-link">
+                <span>Наши сервисы</span>
+              </a>
+            </li>
+            <li class="site-header__nav-item">
+              <a href="javascript:void(0)" class="site-header__nav-link">
+                <span>Контакты</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a href="tel:+13212223333" class="site-header__phone" aria-label="Позвонить по номеру +1 (321) 222 - 33 - 33">
+          +1 (321) 222 - 33 - 33
+        </a>
+        <button type="button" class="site-header__burger-btn" aria-label="Меню" aria-expanded="false">Меню
+        </button>
+      </div>
+    </header>
+    <main class="site-main">
+      <picture>
+        <source media="(min-width: 769px)" srcset="public/alpaca-desktop.avif" type="image/avif">
+        <source media="(max-width: 768px)" srcset="public/alpaca-mobile.avif" type="image/avif">
+        <img src="public/alpaca-mobile.png" alt="альпака" class="site-main__img">
+      </picture>
+    </main>
+  </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

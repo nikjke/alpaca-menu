@@ -1,0 +1,44 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+body {
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+body,
+button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  color: $primary-color;
+}
+
+a {
+  transition: color 0.4s ease;
+  text-decoration: none;
+  color: $primary-color;
+
+  &:visited {
+    color: red;
+  }
+
+  &:hover {
+    color: $accent-color;
+  }
+
+  &:active {
+    color: $primary-color;
+  }
+}
+
+@media (pointer: coarse) {
+  a {
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
